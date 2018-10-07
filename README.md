@@ -1,5 +1,4 @@
-# dsi_capstone
-DSU US-5 capstone project
+# DSI US-5 ATX capstone project
 
 # Problem Statement
 Telstra, the largest telecommunications company in Australia,  is on a journey to enhance the customer experience - ensuring everyone in the company is putting customers first. In terms of its expansive network, this means continuously advancing how it predicts the scope and timing of service disruptions. Telstra wants to see how you would help it drive customer advocacy by developing a more advanced predictive model for service disruptions and to help it better serve its customers.
@@ -36,14 +35,13 @@ The submitted probabilities for a given row are not required to sum to one becau
 
 The Kaggle competition provides the following data:
 
-File descriptions
-***
-train.csv - the training set for fault severity
-test.csv - the test set for fault severity
-sample_submission.csv - a sample submission file in the correct format
-event_type.csv - event type related to the main dataset
-log_feature.csv - features extracted from log files
-resource_type.csv - type of resource related to the main dataset
-severity_type.csv -  severity type of a warning message coming from the log
+|  Name      | Description | 
+|------------|-------------|
+| train.csv  | the training set for fault severity |  
+| test.csv   | the test set for fault severity |
+| sample_submission.csv | a sample submission file in the correct format |
+| event_type.csv  | event type related to the main dataset |
+| log_feature.csv | features extracted from log files |
+| resource_type.csv | type of resource related to the main dataset |
+| severity_type.csv | severity type of a warning message coming from the log |
 
-# 
