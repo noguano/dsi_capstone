@@ -45,3 +45,18 @@ The Kaggle competition provides the following data:
 | resource_type.csv | type of resource related to the main dataset |
 | severity_type.csv | severity type of a warning message coming from the log |
 
+# Features
+
+One of the first things I noticed in the provided data is the lack of equipment and connection information. In my experience, the equipment used to provide service (RAN, router, switch, shelf, blade, cross-connect, transceiver, etc.) had the highest probability of causing service interruptions, followed closely by the software or firmware operating that equipment. Another huge factor is human (operator) error (fat fingers, mis-reading procedures, not thoroughly testing before deploying, etc). However, in a public competition the service provider doesn't want to tip consumers over the edge by admitting how their equipment, software, and employees cause the vast majority of outages. Instead, we are left to sift through the haystacks of data to find other minutiae, such as:
+1.	Location – location data could point to factors I mentioned above, so this my be our best bet
+2.	Weather – harsh weather conditions often impact service, especially metallic loop services
+3.	Time (of day, month, year) – temporal data gives us an indicator of service usage for peak hours
+4.	Maintenance – planned service could have more impact than intended
+5.	Power failure – although rare in telecommunications, power outages do happen
+6.	Natural disaster – line breaks and flooding impact service
+7.	Demand fluctuation – certain areas are more susceptible to interruptions based on fluctuations in demand
+Several of these factors are share a linear relationship, for example, a hurricane (or typhoon) may cause flooding that causes a power outage and a spike in demand. Another example is a music festival, where tens of thousands of consumers try to simultaneously connect while the service provider has not scaled equipment to meet that level of demand. 
+
+# Exploratory Data analysis
+
+Since we are tasked with determining the probabilities of three outcomes, this is a multi-classification problem. 
