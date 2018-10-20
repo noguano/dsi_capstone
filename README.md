@@ -60,7 +60,7 @@ What we are left with, in this competition, are four tables of encoded numbers, 
 
 # Exploratory Data analysis
 
-Since we are tasked with determining the probabilities of three outcomes, this is a multi-classification problem. The classes are very imbalanced, so splitting them up makes sense. We'll ahve to reverse engineer all data in the supporting files, as we are not given any pertinent information about them. This is where having a decent amount of domain experience comes in handy. In the notebood, I describe the step by step process.
+Since we are tasked with determining the probabilities of three outcomes, this is a multi-classification problem. The classes are very imbalanced, so splitting them up makes sense. We'll have to reverse engineer all data in the supporting files, as we are not given any pertinent information about them. This is where having a decent amount of domain experience comes in handy. In the notebood, I describe the step by step process.
 
 # Feature Engineering
 
